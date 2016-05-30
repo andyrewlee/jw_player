@@ -4,5 +4,20 @@
 #+BEGIN_SRC javascript
 jwplayer().getState()
 #+END_SRC
-
-
+* Controlling and setting
+** API can tell the player to do things
+#+BEGIN_SRC javascript
+jwplayer().pause(true)
+jwplayer().setVolume(50)
+#+END_SRC
+* Event Listenting
+** Listeners
+*** on('event')
+#+BEGIN_SRC javascript
+jwplayer().on('volume', function(e) {
+  alert("Volume is changed to: "+ e.volume);
+});
+#+END_SRC
+*** off('event')
+*** once('event')
+*** trigger('event')
