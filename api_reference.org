@@ -1,0 +1,6 @@
+* Introduction
+** All API calls should be made after player is considered ready
+* Getters
+~~ jwplayer().getState()
+
+
